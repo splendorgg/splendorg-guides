@@ -3,7 +3,7 @@ title: Fastfetch Config File
 ---
 
 Use an editor to change your config file. It should be located in ````~/.config/fastfetch/config.jsonc ````. 
-If you don't have this config fiel you can create it with ```` fastfetch --gen-config ````
+If you don't have this config file you can create it with ```` fastfetch --gen-config ````
 
 
 To include an image in your Fastfetch configuration, simply provide the path to the image in the source field of the logo section.
