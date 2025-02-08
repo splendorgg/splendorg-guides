@@ -8,7 +8,7 @@ Use an editor to change your config file. It should be located in your Home dire
 To include an image in your Wezterm configuration, simply provide the path to the image for ````config.window_background_image````
 
 Change this with your config file and edit to your preferences.
-```
+```lua
 local wezterm = require 'wezterm'
 
 local config = wezterm.config_builder()

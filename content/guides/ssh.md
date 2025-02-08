@@ -11,7 +11,7 @@ This guide provides step-by-step instructions to set up and configure an SSH con
 
 Run the following commands to install and start the SSH server:
 
-```
+```bash
 sudo apt install openssh-server
 sudo systemctl start ssh
 ```
@@ -27,7 +27,7 @@ Retrieve your local IP address using one of the following commands:
 
 Create a new SSH key pair with the following command:
 
-```
+```bash
 ssh-keygen -t ed25519 -f ~/.ssh/<filename> -C "<comment>"
 ```
 
@@ -40,7 +40,7 @@ Replace comment with a descriptive comment.
 
 Transfer the public key to the server:
 
-```
+```bash
 ssh-copy-id -i ~/.ssh/filename.pub user@ip
 ```
 
@@ -52,7 +52,7 @@ Replace ip with the server’s IP address.
 
 Log in to the server to verify the key-based authentication:
 
-```
+```bash
 ssh user@ip
 ```
 
@@ -62,7 +62,7 @@ If successful, you will authenticate using the key.
 
 To simplify future connections, configure your SSH client:
 
-```
+```bash
 nano ~/.ssh/config
 ```
 
@@ -84,7 +84,7 @@ Replace *server_user* with the server’s username.
 
 You can now connect using the alias:
 
-```
+```bash
 ssh <name>
 ```
 
@@ -94,7 +94,7 @@ ssh <name>
 
 Edit the SSH server configuration file:
 
-```
+```bash
 sudo nano /etc/ssh/sshd_config
 ```
 
@@ -113,7 +113,7 @@ PermitRootLogin no: Prevents root user login via SSH.
 
 Apply the changes by reloading the SSH service:
 
-```
+```bash
 sudo systemctl reload ssh
 ```
 

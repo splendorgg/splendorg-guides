@@ -164,4 +164,7 @@ pacman -S xf86-video-vesa mesa xorg-server plasma-meta kde-applications-meta sdd
 systemctl enable sddm.service --now
 ```
 exit
+
+unmount
+
 reboot
