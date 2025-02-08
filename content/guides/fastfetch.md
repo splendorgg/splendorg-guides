@@ -9,7 +9,7 @@ If you don't have this config file you can create it with ```` fastfetch --gen-c
 To include an image in your Fastfetch configuration, simply provide the path to the image in the source field of the logo section.
 
 Change this with your config file and edit to your preferences.
-```
+```jsonc
 {
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
     "logo": {
