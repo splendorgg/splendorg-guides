@@ -1,6 +1,0 @@
----
-title: deneme
----
-
-## deneme
-deneme
